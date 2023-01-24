@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.BarkaatiPrint.com</title>
+    <link rel="shortcut icon" href="cmyk.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="title">
+        <span>Login Form</span></div>
+      <form action="#">
+        <div class="row">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Email or Phone" required id="email">
+        </div>
+        <div class="row">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required id="password">
+        </div>
+        <div class="pass"><a href="#">Forgot password?</a></div>
+        <div>
+          <input type="radio" name="box" value="Admin"> Admin <br>
+          <input type="radio" name="box" value="User"> User
+
+        </div>
+        <div class="row button">
+          <input type="submit" value="Login" id="login">
+        </div>
+        <div class="row button">
+          <input type="submit" value="Signup" id="signup">
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Tags -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+  
+    <script>
+        const firebaseConfig = {
+      apiKey: "AIzaSyAy0jDDiylvJAdPqFruLz8HNDKfVwaVtRU",
+      authDomain: "barkaati-5bb72.firebaseapp.com",
+      databaseURL: "https://barkaati-5bb72-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "barkaati-5bb72",
+      storageBucket: "barkaati-5bb72.appspot.com",
+      messagingSenderId: "527742774062",
+      appId: "1:527742774062:web:3104882c2e9478ec3168bf",
+      measurementId: "G-B9E134ZRLK"
+    };
+    firebase.initializeApp(firebaseConfig)
+  </script>
+      
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
