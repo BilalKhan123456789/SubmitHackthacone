@@ -76,5 +76,5 @@ submit.addEventListener("click",async function(){
 
   localStorage.setItem("key",key)
 
-  window.location.replace("admin_panel.html")
+  window.location.replace("adminp.html")
 })
